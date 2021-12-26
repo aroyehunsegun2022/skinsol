@@ -9,6 +9,9 @@ include_once("header.php")
 		<div class="col-md-4 card text-center offset-md-4">
 			<a href="upload_products.php">Upload Products</a>
 		</div>
+		<div class="col-md-4 card text-center offset-md-4">
+			<a href="upload_category.php">Upload Category</a>
+		</div>
 	</div>
 
 <?php 

@@ -351,4 +351,113 @@ include_once("constants.php");
 
 // End  MyCustomers Class Diagram
 
+
+
+
+// Start My Category Class Diagram
+
+	class MyCategory {
+
+		public $category_name;
+		public $dbcon; //database connection handler
+
+
+		//create method/function/operation
+		function __construct() {
+			$this->dbcon = new MySqli(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+			if ($this->dbcon->connect_error){
+				die("Connection failed".$this->dbcon->connect_error)."<br>";
+			}
+			// else {
+			// 	echo "Connection successful";
+			// }
+		}
+
+
+
+		function addCategory($category_name) {
+
+		$sql = "INSERT INTO category(category_name) VALUES('$category_name')";
+
+		// check result
+		$result = $this->dbcon->query($sql);
+
+			if ($this->dbcon->affected_rows == 1) {
+				return true;
+			}
+			else {
+				return false;
+			}
+
+		}
+
+
+
+		// Get all Categories
+		function getSpecificCategory($category_id) {
+			$sql = "SELECT products.* FROM products JOIN category ON category.category_id=products.category_id WHERE products.category_id LIKE '$category_id' ORDER BY rand()";
+
+
+			$result = $this->dbcon->query($sql);
+			$rows = array();
+
+			if ($this->dbcon->affected_rows > 0) {
+				while ($row = $result->fetch_array()) {
+					$rows[] = $row;
+				}
+				return $rows;
+			}
+			else {
+				return $rows;
+			}
+			
+		}
+
+
+
+		// Get all Users information
+		function getCategory() {
+			$sql = "SELECT * FROM category";
+
+			$result = $this->dbcon->query($sql);
+			$rows = array();
+
+			if ($this->dbcon->affected_rows > 0) {
+				while ($row = $result->fetch_array()) {
+					$rows[] = $row;
+				}
+				return $rows;
+			}
+			else {
+				return $rows;
+			}
+			
+		}
+
+
+
+		// Get all categories and equipment information
+		function getAllCategory() {
+			$sql = "SELECT category.category_id, category.category_name, products.product_name FROM category JOIN products ON category.category_id=products.category_id ORDER BY category.category_id";
+
+			$result = $this->dbcon->query($sql);
+			$rows = array();
+
+			if ($this->dbcon->affected_rows > 0) {
+				while ($row = $result->fetch_array()) {
+					$rows[] = $row;
+				}
+				return $rows;
+			}
+			else {
+				return $rows;
+			}
+			
+		}
+
+	}
+
+// End MyCategory class diagram
+
 ?>
