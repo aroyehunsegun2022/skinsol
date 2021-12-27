@@ -17,8 +17,7 @@ include_once("header.php")
           
           ?>
           <div class="col-md-2 mt-2 indxrw7col" id="indxrw7col1" style="padding-top: 8px">
-            <a href="product_details
-            .php?equipment_id=<?php echo $value['product_id'];?>">
+            <a href="product_details.php?product_id=<?php echo $value['product_id'];?>">
             <?php if(empty($value['product_image'])) { ?>
               <img class="card-img-top" src="images/logo12.png" class="img-fluid" alt="product" width="250" height="250"> 
               <?php } else { ?>
@@ -45,8 +44,7 @@ include_once("header.php")
           
           ?>
           <div class="col-md-2 mt-2 indxrw7col" id="indxrw7col1" style="padding-top: 8px">
-            <a href="product_details
-            .php?equipment_id=<?php echo $value['product_id'];?>">
+            <a href="product_details.php?product_id=<?php echo $value['product_id'];?>">
             <?php if(empty($value['product_image'])) { ?>
               <img class="card-img-top" src="images/logo12.png" class="img-fluid" alt="product" width="250" height="250"> 
               <?php } else { ?>

@@ -6,7 +6,8 @@ include_once("classes.php");
 
 
 
-<!-- Row 12 About Us -->
+		<!-- Row 12 Product Details -->
+		<div class="container-fluid">
 			<div class="inb-div"><h5>PRODUCT DETAILS</h5></div>
 			<div class="row cnt-row" id="equp-row">
 				<?php $product_id=$_GET['product_id'];
@@ -16,20 +17,20 @@ include_once("classes.php");
 				
 				?>
 				<div class="col-md-5">
-					<div class="main-gallery-div">
+					<div class="main-gallery-div" style="padding: 15px;">
 						<?php if(empty($value['product_image'])) { ?>
 						<img src="images/product1.jpeg" class="img-fluid main-galleryimg" alt="<?php echo $value['product_name'];?>">
 						<?php } else { ?>
-						<img src="uploads/<?php echo $value['product_image'] ?>" class="img-fluid main-galleryimg">
+						<img src="uploads/<?php echo $value['product_image'] ?>" class="img-fluid" width="400" height="250">
 						<?php } ?>
 					</div>
 					
 					
 				</div>
 
-				<div class="col-md-5 equip-col" id="equip-col2">
-					<h3><?php echo $value['product_name']; ?></h3>
-					<h6><span class="span-buy">N</span><?php echo number_format($value['product_price'], 2); ?></h6>
+				<div class="col-md-4 equip-col" id="equip-col2">
+					<h3><?php echo $value['product_name']; ?></h3><br>
+					<h6><span class="span-buy">N</span><?php echo number_format($value['product_price'], 2); ?></h6><br>
                     	
                     <div>
                     	<?php 
@@ -62,8 +63,8 @@ include_once("classes.php");
                     		<label>Qty: </label>
                     		<input type="number" name="quantity" id="qty" size="2px" style="text-align:center">
                     		<input type="hidden" name="product_price" value="<?php echo $value['product_price'] ?>">
-                    		<br>
-                    		<input type="submit" class="btn btn-success btn-block" name="btn-buy1" value="Proceed to payment">
+                    		<br><br>
+                    		<input type="submit" class="btn btn-success" name="btn-buy1" value="PAY NOW">
                     	</form>
                     	
                     </div><br>
@@ -81,6 +82,7 @@ include_once("classes.php");
 				}
 			?>
 			</div>
+		</div>
 
 		
 
