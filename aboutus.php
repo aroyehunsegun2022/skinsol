@@ -1,11 +1,12 @@
-<?php
+<?php session_start();
 include_once("header.php")
 
 ?>
 	
-	<div class="title-div mt-3 text-center"><h3>ABOUT US</h3></div>
+  <div class="container-fluid">
+      <div class="title-div mt-3 text-center"><h3>ABOUT US</h3></div>
 
-	<div class="row my-4" id="row3">
+      <div class="row my-4" id="abtusrw1">
       <div class="col-md-7" id="r3c1">
         <h4>What we do best</h4>
         <p>
@@ -28,24 +29,29 @@ include_once("header.php")
       </div>
   </div>
 
-	<div class="row" id="r5">
-		<div class="col-md-4">
+  <div class="row" id="abtusrw1">
+    <div class="col-md-4">
           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FSkinsolskincare%2Fvideos%2F1970344209806295%2F&show_text=false&width=476&t=0" width="350" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" alt="advert videos" class="my-4 mx-3"></iframe>
           <br>
-      	</div>
+        </div>
 
         <div class="col-md-4">
           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FSkinsolskincare%2Fvideos%2F1026044391535635%2F&show_text=false&width=382&t=0" width="350" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" alt="advert videos" class="my-4 mx-3"></iframe>
           <br> 
-      	</div>
+        </div>
 
-      	<div class="col-md-4">
+        <div class="col-md-4">
           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FSkinsolskincare%2Fvideos%2F564354207989476%2F&show_text=false&width=382&t=0" width="350" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" class="my-4 mx-3" alt="advert videos"></iframe>
           <br> 
-      	</div>
+        </div>
 
-	</div>
+    </div>
 
+  </div>
+	
+
+
+	
 <?php 
 include_once("whatsapp.php");
 include_once("footer.php")

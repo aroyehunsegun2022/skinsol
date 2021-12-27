@@ -1,4 +1,49 @@
+	<!------ Base Address ----->
+	 <div class="container-fluid" style="background-color: #272932; color: rgb(210, 210, 210);">
+	    <div class="row" id="indxrw11">
+	        <div class="col-md-4 mt-2 indxrw11col" id="indxrw11col1">
+	          <h5>ABOUT US</h5><hr>
+	          <p><span class="header_span1">SKIN</span><span class="header_span2">SOL</span> SKINCARE is a shopping center for all skin care products that enhances the beauty of the skin</p>
+	          <img src="images/skinsol_logo.png" alt="Company logo" width="150" height="100"><br><br>
+	          <div class="mt-1">
+	            <a href="admin.php">Admin</a><br>
+	          </div>
+	        </div>
 
+	        <div class="col-md-4 indxrw11col" id="indxrw11col2">
+	          <h5>CONTACT US</h5>
+	          <hr>
+	          <div class="mb-4">
+	            <p><i class="fa fa-home"></i> Shop 22<br> 23 Opeyemi Plaza,  Mosalasi Bus Stop,<br>Iyana Ipaja, Lagos<br>
+	            <i class="fa fa-phone-alt"></i> 07060475625 <br>
+	            <i class="fa fa-envelope"></i> info@skinsol.com</p>
+	          </div>
+
+	          <div class="mt-4">
+	            <a href="https://web.facebook.com/Skinsolskincare" target="_blank"><img src="images/facebook.png" class="img-fluid" alt="Facebook"></a>
+	            <a href="https://mobile.twitter.com/skinsolbeauty" target="_blank"><img src="images/twitter.png" class="img-fluid" alt="Twitter"></a>
+	            <a href="https://youtu.be/i4cbcjodBJ8" target="_blank"><img src="images/linkedin.png" class="img-fluid" alt="LinkedIn"></a>
+	            <a href="https://www.instagram.com/skinsol_skin_care/?hl=en" target="_blank"><img src="images/instagram.png" class="img-fluid" alt="Instagram"></a>
+	          </div>
+	        </div>
+
+	        <div class="col-md-4 indxrw11col" id="indxrw11col3">
+	          <h5>REACH US</h5><hr>
+	          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.8239898939057!2d3.2925483847417345!3d6.61010007202241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90560215aaf5%3A0x9feb8bdf9783ad02!2sMosalasi%20Bus%20Stop!5e0!3m2!1sen!2sng!4v1640260125346!5m2!1sen!2sng" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid" alt="map to our address"></iframe>
+	        </div>
+	      
+	    </div>
+	 </div>
+
+
+	 <!------ Footer  ----->
+	 <div class="container-fluid" style="background-color: #272932; color: rgb(210, 210, 210);">
+	    <div class="row" id="indxrw12">
+	      <div class="col-md-12 text-center" id="r11c1">
+	          <p>Designed by &copy; eIndustries 2021. All rights reserved</p>
+	        </div>
+	    </div>
+	 </div>
 
 
 
@@ -16,6 +61,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 
+		
 		});
 
 			

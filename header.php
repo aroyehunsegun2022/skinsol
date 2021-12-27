@@ -41,8 +41,13 @@ ob_start();
 
 		a:link {
 			text-decoration: none;
+			color: rgb(30, 30, 30);
 		}
 
+		.title-div {
+			color: rgb(90, 90, 90);
+			text-decoration-line: underline;
+		}
 		/************* Ending of Body CSS ***********/
 		/********************************************/
 
@@ -74,9 +79,13 @@ ob_start();
 			background-color: rgba(56,215,85, 0.3) !important;
 		}
 
+		.fa-facebook-f, .fa-instagram {
+			color: rgb(30, 30, 30);
+		}
+
 		/***** Navbar *****/
 		#indxrw3 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 60px;
 			background-color: #f5f5f5 !important;
 		}
@@ -101,7 +110,7 @@ ob_start();
 
 		/***** Category & Banner *****/
 		#indxrw4 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 450px;
 			padding-top: 5px;
 		}
@@ -113,15 +122,15 @@ ob_start();
 
 		/***** About Us *****/
 		#indxrw5 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 150px;
 		}
 
 		/***** unique selling point *****/
 		#indxrw6 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 250px;
-			padding-top: 3px;
+			padding-top: 13px;
 			padding-bottom: 3px;
 		}
 
@@ -159,7 +168,7 @@ ob_start();
 
 		/***** products one *****/
 		#indxrw7 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 200px;
 			padding-top: 3px;
 			padding-bottom: 3px;
@@ -175,80 +184,30 @@ ob_start();
 
 		/***** referral *****/
 		#indxrw8 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 250px;
+			padding-top: 10px;
 		}
 
-		.review {
-		    margin-bottom: 30px;
+		.indxrw8col {
+		    text-align: center;
+		    transition: transform 0.5s;
 		}
 
-		.review .review-slider {
-		    position: relative;
+		.indxrw8col:hover {
+		    transform: translate3d(10px, 10px, 15px);
 		}
 
-		.review .review-slider-item {
-		    display: flex;
-		    align-items: center;
-		    flex-direction: row;
-		    background: #ffffff;
-		}
-
-		.review .review-img {
-		    width: 100%;
-		    max-width: 200px;
-		    overflow: hidden;
-		}
-
-		.review .review-img img {
-		    width: 100%; 
-		    height: 100%; 
-		    object-fit: cover; 
-		}
-
-		.review .review-text {
-		    padding: 15px;
-		    width: 100%;
-		    max-width: calc(100% - 200px);
-		}
-
-		.review .review-text h2 {
-		    font-size: 22px;
-		    letter-spacing: 2px;
-		    margin-bottom: 5px;
-		}
-
-		.review .review-text h3 {
-		    font-size: 14px;
-		    letter-spacing: 2px;
-		    margin-bottom: 5px;
-		}
-
-		.review .review-text p {
-		    margin: 0;
-		}
-
-		.review .review-text .ratting {
-		    margin-bottom: 5px;
-		}
-
-		.review .review-text .ratting i {
-		    color: #FF6F61;
-		    font-size: 14px;
-		}
-
-		.review .slick-slider:hover .slick-prev {
-		    left: 30px;
-		}
-
-		.review .slick-slider:hover .slick-next {
-		    right: 30px;
+		.indxrw8col img {
+		    width: 70px;
+		    height: 70px;
+		    border-radius: 50%;
 		}
 
 
 		/***** products two *****/
 		#indxrw9 {
-			margin-bottom: 15px;
+			margin-bottom: 35px;
 			min-height: 200px;
 			padding-top: 3px;
 			padding-bottom: 3px;
@@ -256,30 +215,59 @@ ob_start();
 
 		/***** Advert Two *****/
 		#indxrw10 {
-			border: 1px solid blue;
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 			min-height: 150px;
+		}
+
+		#indxrw10col1 {
+			padding-top: 8px;
+		}
+
+		#indxrw10col2 {
+			padding-top: 20px;
+		}
+
+		#indxrw10col3 {
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/christmas.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: rgb(210, 210, 210);
+			padding-top: 20px;
 		}
 
 		/***** base address *****/
 		#indxrw11 {
-			margin-bottom: 15px;
+			margin-bottom: 5px;
 			min-height: 300px;
 		}
 
 		/***** footer *****/
 		#indxrw12 {
-			margin-bottom: 15px;
 			min-height: 50px;
 			padding-top: 5px;
 		}
 		/********** Ending of Index Page CSS ***********/
 		/***********************************************/
 
-		.title-div {
-			color: rgb(90, 90, 90);
-			text-decoration-line: underline;
+		
+
+
+
+		/********** Beginning of About Us CSS ***********/
+		/***********************************************/
+		#abtusrw1 {
+			margin: auto;
 		}
+
+		#abtusrw2 {
+			margin: auto;
+		}
+
+		/********** Ending of Whatsapp CSS ***********/
+		/***********************************************/
+
+
+
 
 		/********** Beginning of Whatsapp CSS ***********/
 		/***********************************************/
@@ -308,7 +296,11 @@ ob_start();
 	<!------ Covid ----->
 	<div class="container-fluid">
 	    <div class="row" id="indxrw1">
-	        <marquee>The new Omicron Virus is still out there! So please Stay Safe!!</marquee>
+	        <marquee>
+	        	The new Omicron Virus is still out there!
+	        	<img src="images/omicron.jpg" class="img-fluid mx-3" width="40" height="18">
+	        	So please stay safe!!
+	        </marquee>
 	    </div>
 	 </div>
 
@@ -317,19 +309,18 @@ ob_start();
 	<div class="container-fluid">
 	    <div class="row" id="indxrw2">
 	      <div class="col-sm-3">
-	          <i class="fa fa-envelope"></i> info@skinsol.com
+	          <a href="mailto:info@skinsol.com?msg=sent successfully" target="_blank"><i class="fa fa-envelope"></i> info@skinsol.com</a>
 	      </div>
 
 	      <div class="col-sm-6 text-center animate__animated animate__shakeY">
-	          <a href="https://mobile.twitter.com/skinsolbeauty"><i class="fab fa-twitter"></i></a>&nbsp;
-	          <a href="https://web.facebook.com/Skinsolskincare"><i class="fab fa-facebook-f"></i></a>&nbsp;
-	          <a href=""><i class="fab fa-linkedin-in"></i></a>&nbsp;
-	          <a href="https://www.instagram.com/skinsol_skin_care/?hl=en"><i class="fab fa-instagram"></i></a>&nbsp;
-	          <a href="https://youtu.be/i4cbcjodBJ8"><i class="fab fa-youtube"></i></a>&nbsp;
+	          <a href="https://mobile.twitter.com/skinsolbeauty" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;
+	          <a href="https://web.facebook.com/Skinsolskincare" target="_blank"><i class="fab fa-facebook-f"></i></a>&nbsp;
+	          <a href="https://www.instagram.com/skinsol_skin_care/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;
+	          <a href="https://youtu.be/i4cbcjodBJ8" target="_blank"><i class="fab fa-youtube"></i></a>&nbsp;
 	      </div>
 
 	      <div class="col-sm-3 text-right">
-	          <i class="fa fa-phone-alt"></i> 070-6047-5625
+	          <a href="tel:+2347060475625" target="_blank"><i class="fa fa-phone-alt"></i> 070-6047-5625</a>
 	      </div>
 	    </div>
 	 </div>

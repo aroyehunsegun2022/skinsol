@@ -460,4 +460,116 @@ include_once("constants.php");
 
 // End MyCategory class diagram
 
+
+
+// Start My Cart Class Diagram
+
+	class MyCart {
+
+		public $product_name;
+		public $quantity;
+		public $product_price;
+		public $session_id; 
+		public $dbcon; //database connection handler
+
+
+		//create method/function/operation
+		function __construct() {
+			$this->dbcon = new MySqli(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+			if ($this->dbcon->connect_error){
+				die("Connection failed".$this->dbcon->connect_error)."<br>";
+			}
+			// else {
+			// 	echo "Connection successful";
+			// }
+		}
+
+
+
+		function addToCart($product_name, $quantity, $product_price, $session_id) {
+			
+		$sql = "INSERT INTO cart(product_name, quantity, product_price, session_id) VALUES('$product_name', '$quantity', '$product_price', '$session_id')";
+
+		// check result
+		$result = $this->dbcon->query($sql);
+
+			if ($this->dbcon->affected_rows == 1) {
+				return true;
+			}
+			else {
+				return false;
+			}
+
+		}
+
+
+		// Get all Users information
+		function getFromCart($session_id) {
+			$sql = "SELECT * FROM cart WHERE session_id = '$session_id'";
+
+			$result = $this->dbcon->query($sql);
+			$rows = array();
+
+			if ($this->dbcon->affected_rows > 0) {
+				while ($row = $result->fetch_array()) {
+					$rows[] = $row;
+				}
+				return $rows;
+			}
+			else {
+				return $rows;
+			}
+			
+		}
+
+
+
+		public function editCart($quantity, $cart_id) {
+			// write the query
+			$sql = "UPDATE cart SET quantity='$quantity' WHERE cart_id='$cart_id'";
+
+			// run the query
+			$result =$this->dbcon->query($sql);
+
+			$output = array();
+			if ($this->dbcon->affected_rows==1) {
+				$output['success'] = "Quantity was successfully updated";
+			} 
+			elseif ($this->dbcon->affected_rows==0) {
+				$output['success'] = "No changes made!";
+			}
+			else {
+				$output['error'] = "An error occured!".$this->dbcon->error;
+			}
+			
+		}
+
+		//  ?
+
+
+		public function deleteItemIncart($cart_id) {
+			// write the query
+			$sql = "DELETE FROM `cart` WHERE cart.cart_id='$cart_id'";
+			var_dump($sql);
+			// run the query
+			$result =$this->dbcon->query($sql);
+
+			$output = array();
+			if ($this->dbcon->affected_rows==1) {
+				$output['success'] = "Equipment was successfully deleted";
+			} 
+			elseif ($this->dbcon->affected_rows==0) {
+				$output['success'] = "No changes made!";
+			}
+			else {
+				$output['error'] = "An error occured!".$this->dbcon->error;
+			}
+			
+		}
+
+	}
+
+// End MyCart class Diagram
+
 ?>
